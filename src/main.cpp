@@ -11,6 +11,8 @@
 int main(int argc, char* argv[])
 {
     Altrium handler;
+    handler.parse(argc, argv);
+
     return 0;
 }
 
