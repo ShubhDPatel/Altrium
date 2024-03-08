@@ -1,11 +1,12 @@
 /*
-* altrium.cpp
-*
-* Main entry point for the altrium application.
-* Launches a website with user specified options.
-* Such options include: a website name, query strings, and others.
-*/
+ * altrium.cpp
+ *
+ * Main entry point for the altrium application.
+ * Launches a website with user specified options.
+ * Such options include: a website name, query strings, and others.
+ */
 
-int main() {
+int main(int argc, char* argv[])
+{
     return 0;
 }
