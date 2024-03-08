@@ -7,7 +7,12 @@
 #ifndef WEBSITE_HPP
 #define WEBSITE_HPP
 
-class Website {};
+#include <string>
+
+class Website {
+protected:
+    std::string url;
+};
 
 #endif
 
