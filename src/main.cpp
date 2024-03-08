@@ -10,6 +10,7 @@
 
 int main(int argc, char* argv[])
 {
+    Altrium handler;
     return 0;
 }
 
