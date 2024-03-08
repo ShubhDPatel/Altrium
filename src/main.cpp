@@ -6,6 +6,8 @@
  * Such options include: a website name, query strings, and others.
  */
 
+#include "libAltrium/Altrium.hpp"
+
 int main(int argc, char* argv[])
 {
     return 0;
