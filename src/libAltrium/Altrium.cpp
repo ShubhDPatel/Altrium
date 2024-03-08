@@ -1,3 +1,9 @@
+/*
+ * Altrium.cpp
+ * 
+ * Implementation of the Altrium class.
+*/
+
 #include "Altrium.hpp"
 
 /*
