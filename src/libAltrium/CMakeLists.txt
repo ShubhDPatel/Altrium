@@ -2,6 +2,7 @@
 add_library(altrium_library 
     Altrium.cpp
     websites/Website.cpp
+    websites/Google.cpp
     )
 
 # Includes the header in the library.
