@@ -22,6 +22,7 @@ void Altrium::parse(int argc, char* argv[])
     // Selects which website class to use
     if (input == "g")
     {
+        Google google;
     }
 }
 
