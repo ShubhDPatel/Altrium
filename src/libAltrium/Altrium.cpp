@@ -6,6 +6,7 @@
 
 #include "Altrium.hpp"
 #include <string>
+#include "websites/Google.hpp"
 
 /*
 * Entry point for the altrium application.
@@ -21,6 +22,8 @@ void Altrium::parse(int argc, char* argv[])
     // Selects which website class to use
     if (input == "g")
     {
+        Google website;
+        website.buildQuery();
     }
 }
 
