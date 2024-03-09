@@ -1,13 +1,17 @@
 /*
-* Google.cpp
-*
-* Implementation of the Google class.
-*/
+ * Google.cpp
+ *
+ * Implementation of the Google class.
+ */
 
 #include "Google.hpp"
 
-void Google::buildQuery()
+/*
+ * Builds the query string for the website.
+ *
+ * @param[in] query string that contains unformatted query
+ */
+void Google::buildQuery(char* query)
 {
-    
 }
 

@@ -23,6 +23,7 @@ void Altrium::parse(int argc, char* argv[])
     if (input == "g")
     {
         Google google;
+        google.buildQuery(argv[2]);
     }
 }
 

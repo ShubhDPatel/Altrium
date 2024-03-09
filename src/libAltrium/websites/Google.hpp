@@ -14,8 +14,10 @@ class Google : public Website
 public:
     /*
     * Builds the query string for the website.
+    *
+    * @param[in] query string that contains unformatted query
     */
-    void buildQuery() override;
+    void buildQuery(char* query) override;
 };
 
 #endif

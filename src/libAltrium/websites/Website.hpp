@@ -16,9 +16,11 @@ protected:
 
 public:
     /*
-    * Builds the query string for the website.
-    */
-    virtual void buildQuery() = 0;
+     * Builds the query string for the website.
+     *
+     * @param[in] query string that contains unformatted query
+     */
+    virtual void buildQuery(char* query) = 0;
 };
 
 #endif
