@@ -16,6 +16,12 @@
 */
 void Altrium::parse(int argc, char* argv[])
 {
-    Website website(argv[2]);
+    // Converts 2nd input parameter to a string
+    std::string input = std::string(argv[1]);
+
+    // Selects which website class to use
+    if (input == "g")
+    {
+    }
 }
 
