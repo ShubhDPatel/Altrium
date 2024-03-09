@@ -1,18 +1,18 @@
 /*
-* Website.hpp
-*
-* Include file for the Website interface.
-*/
+ * Website.hpp
+ *
+ * Include file for the Website interface.
+ */
 
 #ifndef WEBSITE_HPP
 #define WEBSITE_HPP
 
 #include <string>
 
-class Website {
+class Website
+{
 protected:
     std::string url;
 };
 
 #endif
-
