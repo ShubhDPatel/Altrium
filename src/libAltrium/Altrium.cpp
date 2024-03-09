@@ -6,7 +6,6 @@
 
 #include "Altrium.hpp"
 #include <string>
-#include "websites/Website.hpp"
 
 /*
 * Entry point for the altrium application.

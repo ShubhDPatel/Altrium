@@ -18,7 +18,7 @@ public:
     /*
     * Builds the query string for the website.
     */
-    void buildQuery();
+    virtual void buildQuery() = 0;
 
     /*
     * Default constructor.
