@@ -19,6 +19,11 @@ public:
     * Builds the query string for the website.
     */
     virtual void buildQuery() = 0;
+
+    /*
+    * Default constructor.
+    */
+    Website(std::string inputUrl);
 };
 
 #endif
