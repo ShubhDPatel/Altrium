@@ -5,6 +5,7 @@
 */
 
 #include "Altrium.hpp"
+#include <string>
 #include <iostream>
 
 /*
@@ -15,6 +16,7 @@
 */
 void Altrium::parse(int argc, char* argv[])
 {
-    std::cout << "Hello, World!" << std::endl;
+    // Convert search query c-string into a std::string
+    std::string query = std::string(argv[2]);
 }
 
