@@ -6,6 +6,7 @@
 
 #include "Altrium.hpp"
 #include <string>
+#include "websites/Website.hpp"
 
 /*
 * Entry point for the altrium application.
@@ -15,6 +16,6 @@
 */
 void Altrium::parse(int argc, char* argv[])
 {
-    std::string query = std::string(argv[2]);
+    Website website(argv[2]);
 }
 
