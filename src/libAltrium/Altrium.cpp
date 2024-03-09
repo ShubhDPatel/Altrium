@@ -6,14 +6,7 @@
 
 #include "Altrium.hpp"
 #include <string>
-<<<<<<< HEAD
-<<<<<<< HEAD
 #include "websites/Google.hpp"
-=======
-#include "websites/Website.hpp"
->>>>>>> parent of 077f746 (Change buildQuery() to virtual member)
-=======
->>>>>>> parent of ca15196 (Remove default constructor on virtual class)
 
 /*
 * Entry point for the altrium application.
