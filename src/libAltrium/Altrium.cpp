@@ -6,7 +6,11 @@
 
 #include "Altrium.hpp"
 #include <string>
+<<<<<<< HEAD
 #include "websites/Google.hpp"
+=======
+#include "websites/Website.hpp"
+>>>>>>> parent of 077f746 (Change buildQuery() to virtual member)
 
 /*
 * Entry point for the altrium application.
