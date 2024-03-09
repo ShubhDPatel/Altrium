@@ -23,7 +23,8 @@ public:
     /*
     * Default constructor.
     */
-    Website(std::string inputUrl);
+    Website(char* inputUrl);
 };
 
 #endif
+

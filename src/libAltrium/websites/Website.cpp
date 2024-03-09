@@ -6,7 +6,8 @@
 
 #include "Website.hpp"
 
-Website::Website(std::string inputUrl)
+Website::Website(char* inputUrl)
 {
-    url = inputUrl;
+    url = std::string(inputUrl);
 }
+
