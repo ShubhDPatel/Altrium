@@ -11,7 +11,7 @@
  *
  * @param[in] query string that contains unformatted query
  */
-void Google::buildQuery(char* query)
+void Google::buildQuery()
 {
 }
 
