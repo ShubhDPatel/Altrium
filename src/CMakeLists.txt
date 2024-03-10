@@ -1,16 +1,13 @@
 # altrium executable
-add_executable(altrium)
-target_sources(altrium PRIVATE main.cpp)
-target_compile_features(altrium PRIVATE cxx_std_17)
+add_executable(alt)
+target_sources(alt PRIVATE main.cpp)
+target_compile_features(alt PRIVATE cxx_std_17)
 
 # altrium library
 add_subdirectory(libAltrium)
 
-target_link_libraries(altrium PRIVATE altrium_library)
+target_link_libraries(alt PRIVATE altrium_library)
 
 # Install the executable to bin
-install(TARGETS altrium 
-    RUNTIME DESTINATION bin
-    RENAME alt
-)
+install(PROGRAMS $<TARGET_FILE:alt> TYPE BIN)
 
