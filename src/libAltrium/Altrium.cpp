@@ -22,8 +22,8 @@ void Altrium::parse(int argc, char* argv[])
     // Selects which website class to use
     if (input == "g")
     {
-        Google google;
-        google.buildQuery(argv[2]);
+        Google google(argv[2]);
+        google.buildQuery();
     }
 }
 

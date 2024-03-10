@@ -8,6 +8,7 @@
 #define GOOGLE_HPP
 
 #include "Website.hpp"
+#include <string>
 
 class Google : public Website
 {
@@ -17,7 +18,9 @@ public:
     *
     * @param[in] query string that contains unformatted query
     */
-    void buildQuery(char* query) override;
+    void buildQuery() override;
+
+    Google(char* query);
 };
 
 #endif

@@ -20,7 +20,7 @@ public:
      *
      * @param[in] query string that contains unformatted query
      */
-    virtual void buildQuery(char* query) = 0;
+    virtual void buildQuery() = 0;
 };
 
 #endif
