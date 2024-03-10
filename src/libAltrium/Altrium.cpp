@@ -38,3 +38,11 @@ void Altrium::parse()
     }
 }
 
+/*
+* Trims both sides of the url
+*/
+void Altrium::trim()
+{
+    
+}
+

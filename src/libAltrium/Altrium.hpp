@@ -26,6 +26,11 @@ public:
     */
     void parse();
 
+    /*
+    * Trims both sides of the url
+    */
+    void trim();
+
 };
 
 #endif
