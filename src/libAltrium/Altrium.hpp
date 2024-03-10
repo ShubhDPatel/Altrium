@@ -1,8 +1,15 @@
 #ifndef ALTRIUM_HPP
 #define ALTRIUM_HPP
 
+#include <string>
+#include <memory>
+
 class Altrium
 {
+private:
+
+    int argc;
+    std::unique_ptr<std::string[]> argv;
 public:
 
     /*
