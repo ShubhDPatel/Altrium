@@ -10,7 +10,6 @@
 /*
  * Builds the query string for the website.
  *
- * @param[in] query string that contains unformatted query
  */
 void Google::buildQuery()
 {
@@ -19,7 +18,7 @@ void Google::buildQuery()
 /*
 * Constructor
 *
-* @param[in] query string that contains unformatted query
+* @param[in] query string that contains the query
 */
 Google::Google(const char* query)
 {
