@@ -5,7 +5,6 @@
  */
 
 #include "Google.hpp"
-#include <string>
 #include <iostream>
 
 /*
@@ -22,8 +21,8 @@ void Google::buildQuery()
 *
 * @param[in] query string that contains the query
 */
-Google::Google(const char* query)
+Google::Google(const std::string query)
 {
-    url = std::string(query);
+    url = query;
 }
 

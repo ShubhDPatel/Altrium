@@ -10,6 +10,7 @@ private:
 
     int argc;
     std::unique_ptr<std::string[]> argv;
+
 public:
 
     /*

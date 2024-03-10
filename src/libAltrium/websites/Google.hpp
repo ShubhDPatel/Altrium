@@ -8,6 +8,7 @@
 #define GOOGLE_HPP
 
 #include "Website.hpp"
+#include <string>
 
 class Google : public Website
 {
@@ -23,7 +24,7 @@ public:
     *
     * @param[in] query string that contains the query
     */
-    Google(const char* query);
+    Google(const std::string query);
 };
 
 #endif
