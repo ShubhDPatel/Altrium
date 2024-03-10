@@ -6,6 +6,7 @@
 
 #include "Google.hpp"
 #include <iostream>
+#include <algorithm>
 
 /*
 * Constructor
@@ -23,6 +24,7 @@ Google::Google(const std::string query)
  */
 void Google::buildQuery()
 {
+    std::replace(url.begin(), url.end(), ' ', '+');
     std::cout << url << std::endl;
 }
 
