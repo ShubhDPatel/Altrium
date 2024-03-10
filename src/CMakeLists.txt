@@ -8,3 +8,9 @@ add_subdirectory(libAltrium)
 
 target_link_libraries(altrium PRIVATE altrium_library)
 
+# Install the executable to bin
+install(TARGETS altrium 
+    RUNTIME DESTINATION bin
+    RENAME alt
+)
+
