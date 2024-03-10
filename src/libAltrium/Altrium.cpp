@@ -13,11 +13,8 @@
 */
 void Altrium::parse()
 {
-    // Converts 2nd input parameter to a string
-    std::string input = std::string(argv[1]);
-
     // Selects which website class to use
-    if (input == "g")
+    if (argv[1] == "g")
     {
         Google google(argv[2]);
         google.buildQuery();
