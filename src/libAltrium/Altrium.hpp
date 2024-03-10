@@ -12,6 +12,14 @@ public:
     * @param[in] argv array of command line arguments
     */
     void parse(int argc, char* argv[]);
+
+    /*
+    * Constructor
+    *
+    * @param[in] argc number of command line arguments
+    * @param[in] argv array of command line arguments
+    */
+    Altrium(int argc, char* argv[]);
 };
 
 #endif

@@ -10,7 +10,7 @@
 
 int main(int argc, char* argv[])
 {
-    Altrium handler;
+    Altrium handler(argc, argv);
     handler.parse(argc, argv);
 
     return 0;
