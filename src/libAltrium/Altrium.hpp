@@ -4,6 +4,7 @@
 class Altrium
 {
 public:
+
     /*
     * Entry point for the altrium application.
     *

@@ -12,9 +12,11 @@
 class Website
 {
 protected:
+
     std::string url;
 
 public:
+
     /*
      * Builds the query string for the website.
      *

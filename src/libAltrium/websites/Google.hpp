@@ -12,6 +12,7 @@
 class Google : public Website
 {
 public:
+
     /*
     * Builds the query string for the website.
     *
