@@ -15,7 +15,8 @@
 *
 * @param[in] query string that contains the query
 */
-Google::Google(const std::string query)
+StackOverflow::StackOverflow(const std::string query)
 {
     url = query;
 }
+
