@@ -7,6 +7,7 @@
 #include "Google.hpp"
 #include <iostream>
 #include <algorithm>
+#include <cstdlib>
 
 /*
 * Constructor
@@ -26,5 +27,8 @@ void Google::buildQuery()
 {
     std::replace(url.begin(), url.end(), ' ', '+');
     std::cout << url << std::endl;
+
+    std::string fullCommand = "cmd.exe /c start \"\" \"https://google.com/search?q=" + url + "\"";
+    system(fullCommand.c_str());
 }
 
