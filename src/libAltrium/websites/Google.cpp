@@ -8,15 +8,6 @@
 #include <iostream>
 
 /*
- * Builds the query string for the website.
- *
- */
-void Google::buildQuery()
-{
-    std::cout << url << std::endl;
-}
-
-/*
 * Constructor
 *
 * @param[in] query string that contains the query
@@ -24,5 +15,14 @@ void Google::buildQuery()
 Google::Google(const std::string query)
 {
     url = query;
+}
+
+/*
+ * Builds the query string for the website.
+ *
+ */
+void Google::buildQuery()
+{
+    std::cout << url << std::endl;
 }
 

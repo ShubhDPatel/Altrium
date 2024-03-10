@@ -8,19 +8,6 @@
 #include "websites/Google.hpp"
 
 /*
-* Entry point for the altrium application.
-*/
-void Altrium::parse()
-{
-    // Selects which website class to use
-    if (argv[1] == "g")
-    {
-        Google google(argv[2]);
-        google.buildQuery();
-    }
-}
-
-/*
 * Constructor
 *
 * @param[in] argc number of command line arguments
@@ -35,6 +22,19 @@ Altrium::Altrium(int argc, char* argvInput[]) : argc(argc)
     for (int i = 0; i < argc; ++i)
     {
         argv[i] = std::string(argvInput[i]);
+    }
+}
+
+/*
+* Entry point for the altrium application.
+*/
+void Altrium::parse()
+{
+    // Selects which website class to use
+    if (argv[1] == "g")
+    {
+        Google google(argv[2]);
+        google.buildQuery();
     }
 }
 
