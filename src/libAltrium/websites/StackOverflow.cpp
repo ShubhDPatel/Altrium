@@ -5,8 +5,6 @@
 */
 
 #include "StackOverflow.hpp"
-
-#include <iostream>
 #include <algorithm>
 #include <cstdlib>
 
@@ -18,5 +16,19 @@
 StackOverflow::StackOverflow(const std::string query)
 {
     url = query;
+}
+
+/*
+ * Builds the query string for the website.
+ *
+ */
+void StackOverflow::buildQuery()
+{
+    // Replace spaces with '+'
+    std::replace(url.begin(), url.end(), ' ', '+');
+
+    // Launchs the query
+    std::string fullCommand = "cmd.exe /c start \"\" \"https://stackoverflow.com/search?q=" + url + "\"";
+    system(fullCommand.c_str());
 }
 

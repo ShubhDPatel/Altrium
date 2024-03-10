@@ -6,6 +6,7 @@
 
 #include "Altrium.hpp"
 #include "websites/Google.hpp"
+#include "websites/StackOverflow.hpp"
 #include <cstddef>
 
 /*
@@ -39,6 +40,11 @@ void Altrium::parse()
     {
         Google google(argv[2]);
         google.buildQuery();
+    }
+    else if (argv[1] == "s")
+    {
+        StackOverflow stackOverflow(argv[2]);
+        stackOverflow.buildQuery();
     }
 }
 

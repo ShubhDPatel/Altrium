@@ -5,7 +5,6 @@
  */
 
 #include "Google.hpp"
-#include <iostream>
 #include <algorithm>
 #include <cstdlib>
 
@@ -25,9 +24,10 @@ Google::Google(const std::string query)
  */
 void Google::buildQuery()
 {
+    // Replace spaces with '+'
     std::replace(url.begin(), url.end(), ' ', '+');
-    std::cout << url << std::endl;
 
+    // Launchs the query
     std::string fullCommand = "cmd.exe /c start \"\" \"https://google.com/search?q=" + url + "\"";
     system(fullCommand.c_str());
 }
