@@ -6,6 +6,7 @@
 
 #include "Google.hpp"
 #include <string>
+#include <iostream>
 
 /*
  * Builds the query string for the website.
@@ -13,6 +14,7 @@
  */
 void Google::buildQuery()
 {
+    std::cout << url << std::endl;
 }
 
 /*
