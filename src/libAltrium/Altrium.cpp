@@ -6,6 +6,7 @@
 
 #include "Altrium.hpp"
 #include "websites/Google.hpp"
+#include <cstddef>
 
 /*
 * Constructor
@@ -30,6 +31,9 @@ Altrium::Altrium(int argc, char* argvInput[]) : argc(argc)
 */
 void Altrium::parse()
 {
+    // Trims the url which is in most cases argv[2]
+    trim();
+
     // Selects which website class to use
     if (argv[1] == "g")
     {
@@ -43,6 +47,18 @@ void Altrium::parse()
 */
 void Altrium::trim()
 {
-    
+    // Finds the index of first and last char that are not whitespace
+    size_t first = argv[2].find_first_not_of(" \t\n\r");
+    size_t last = argv[2].find_last_not_of(" \t\n\r");
+
+    // If valid positions, than update the string to be between else set string to empty
+    if (first != std::string::npos && last != std::string::npos)
+    {
+        argv[2] = argv[2].substr(first, last - first + 1);
+    }
+    else
+    {
+        argv[2] = "";
+    }
 }
 
