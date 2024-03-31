@@ -7,6 +7,7 @@
 #include "Altrium.hpp"
 #include "websites/Google.hpp"
 #include "websites/StackOverflow.hpp"
+#include "websites/Youtube.hpp"
 #include <cstddef>
 
 /*
@@ -45,6 +46,11 @@ void Altrium::parse()
     {
         StackOverflow stackOverflow(argv[2]);
         stackOverflow.buildQuery();
+    }
+    else if (argv[1] == "y")
+    {
+        Youtube youtube(argv[2]);
+        youtube.buildQuery();
     }
 }
 
