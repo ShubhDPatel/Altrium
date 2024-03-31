@@ -28,7 +28,7 @@ void Youtube::buildQuery()
     std::replace(url.begin(), url.end(), ' ', '+');
 
     // Launchs the query
-    std::string fullCommand = "cmd.exe /c start \"\" \"https://youtube.com/results?seed=1&q=" + url + "\"";
+    std::string fullCommand = "cmd.exe /c start \"\" \"https://youtube.com/results?search_query=" + url + "\"";
     system(fullCommand.c_str());
 }
 
