@@ -4,6 +4,7 @@ add_library(altrium_library
     websites/Website.cpp
     websites/Google.cpp
     websites/StackOverflow.cpp
+    websites/Youtube.cpp
     )
 
 # Includes the header in the library.
