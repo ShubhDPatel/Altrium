@@ -31,6 +31,10 @@ public:
     */
     void trim();
 
+    /*
+    * Validates user input
+    */
+    void validate();
 };
 
 #endif
