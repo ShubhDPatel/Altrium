@@ -9,6 +9,7 @@
 #include "websites/StackOverflow.hpp"
 #include "websites/Youtube.hpp"
 #include <cstddef>
+#include <iostream>
 
 /*
 * Constructor
@@ -33,6 +34,9 @@ Altrium::Altrium(int argc, char* argvInput[]) : argc(argc)
 */
 void Altrium::parse()
 {
+    // Validates user input
+    validate();
+
     // Trims the url which is in most cases argv[2]
     trim();
 
@@ -78,5 +82,11 @@ void Altrium::trim()
 * Validates user input
 */
 void Altrium::validate()
-{}
+{
+    if (argc != 3)
+    {
+        std::cout << "Usage: altrium <website> <url>\n";
+        exit(1);
+    }
+}
 
