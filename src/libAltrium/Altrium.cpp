@@ -74,3 +74,9 @@ void Altrium::trim()
     }
 }
 
+/*
+* Validates user input
+*/
+void Altrium::validate()
+{}
+
