@@ -88,5 +88,24 @@ void Altrium::validate()
         std::cout << "Usage: altrium <website> <url>\n";
         exit(1);
     }
+
+    if (argv[1] != "g")
+    {
+        std::cout << "Invalid website: " << argv[1] << "\n";
+        std::cout << "Usage: altrium <website> <url>\n";
+        exit(1);
+    }
+    if (argv[1] != "s")
+    {
+        std::cout << "Invalid website: " << argv[1] << "\n";
+        std::cout << "Usage: altrium <website> <url>\n";
+        exit(1);
+    }
+    if (argv[1] != "y")
+    {
+        std::cout << "Invalid website: " << argv[1] << "\n";
+        std::cout << "Usage: altrium <website> <url>\n";
+        exit(1);
+    }
 }
 
