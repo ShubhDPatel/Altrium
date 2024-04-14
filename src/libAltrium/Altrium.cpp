@@ -8,6 +8,7 @@
 #include "websites/Google.hpp"
 #include "websites/StackOverflow.hpp"
 #include "websites/Youtube.hpp"
+#include "websites/Pdf.hpp"
 #include <cstddef>
 #include <iostream>
 
@@ -56,6 +57,11 @@ void Altrium::parse()
         Youtube youtube(argv[2]);
         youtube.buildQuery();
     }
+    else if (argv[1] == "p")
+    {
+        Pdf pdf(argv[2]);
+        pdf.buildQuery();
+    }
 }
 
 /*
@@ -91,20 +97,26 @@ void Altrium::validate()
 
     if (argv[1] != "g")
     {
-        std::cout << "Invalid website: " << argv[1] << "\n";
-        std::cout << "Usage: altrium <website> <url>\n";
+        std::cout << "Invalid Destination: " << argv[1] << "\n";
+        std::cout << "Usage: altrium <Destination> <url>\n";
         exit(1);
     }
     if (argv[1] != "s")
     {
-        std::cout << "Invalid website: " << argv[1] << "\n";
-        std::cout << "Usage: altrium <website> <url>\n";
+        std::cout << "Invalid Destination: " << argv[1] << "\n";
+        std::cout << "Usage: altrium <Destination> <url>\n";
         exit(1);
     }
     if (argv[1] != "y")
     {
-        std::cout << "Invalid website: " << argv[1] << "\n";
-        std::cout << "Usage: altrium <website> <url>\n";
+        std::cout << "Invalid Destination: " << argv[1] << "\n";
+        std::cout << "Usage: altrium <Destination> <url>\n";
+        exit(1);
+    }
+    if (argv[1] != "p")
+    {
+        std::cout << "Invalid Destination: " << argv[1] << "\n";
+        std::cout << "Usage: altrium <Destination> <url>\n";
         exit(1);
     }
 }
