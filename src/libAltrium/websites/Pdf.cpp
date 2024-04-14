@@ -24,7 +24,7 @@ Pdf::Pdf(const std::string query)
 void Pdf::buildQuery()
 {
     // Launchs the query
-    std::string fullCommand = "cmd.exe /c start \"\" \"file://wsl.localhost/Ubuntu/${PWD}/" + url + "\"";
+    std::string fullCommand = "cmd.exe /c start \"\" \"file://wsl.localhost/Ubuntu${PWD}/" + url + "\"";
     system(fullCommand.c_str());
 }
 
