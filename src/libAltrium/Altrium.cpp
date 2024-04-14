@@ -91,7 +91,7 @@ void Altrium::validate()
 {
     if (argc != 3)
     {
-        std::cout << "Usage: altrium <website> <url>\n";
+        std::cout << "Usage: altrium <Destination> <url>\n";
         exit(1);
     }
 
