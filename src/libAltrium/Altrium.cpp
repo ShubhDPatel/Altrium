@@ -95,29 +95,26 @@ void Altrium::validate()
         exit(1);
     }
 
-    if (argv[1] != "g")
+    if (argv[1] == "g")
     {
-        std::cout << "Invalid Destination: " << argv[1] << "\n";
-        std::cout << "Usage: altrium <Destination> <url>\n";
-        exit(1);
+        return;
     }
-    if (argv[1] != "s")
+    else if (argv[1] == "s")
     {
-        std::cout << "Invalid Destination: " << argv[1] << "\n";
-        std::cout << "Usage: altrium <Destination> <url>\n";
-        exit(1);
+        return;
     }
-    if (argv[1] != "y")
+    else if (argv[1] == "y")
     {
-        std::cout << "Invalid Destination: " << argv[1] << "\n";
-        std::cout << "Usage: altrium <Destination> <url>\n";
-        exit(1);
+        return;
     }
-    if (argv[1] != "p")
+    else if (argv[1] == "p")
     {
-        std::cout << "Invalid Destination: " << argv[1] << "\n";
-        std::cout << "Usage: altrium <Destination> <url>\n";
-        exit(1);
+        return;
     }
+
+    // Displays error message if invalid destination
+    std::cout << "Invalid Destination: " << argv[1] << "\n";
+    std::cout << "Usage: altrium <Destination> <url>\n";
+    exit(1);
 }
 
