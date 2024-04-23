@@ -9,6 +9,7 @@
 #include "websites/StackOverflow.hpp"
 #include "websites/Youtube.hpp"
 #include "websites/Pdf.hpp"
+#include "websites/Bing.hpp"
 #include <cstddef>
 #include <iostream>
 
@@ -46,6 +47,11 @@ void Altrium::parse()
     {
         Google google(argv[2]);
         google.buildQuery();
+    }
+    else if (argv[1] == "b")
+    {
+        Bing bing(argv[2]);
+        bing.buildQuery();
     }
     else if (argv[1] == "s")
     {
@@ -96,6 +102,10 @@ void Altrium::validate()
     }
 
     if (argv[1] == "g")
+    {
+        return;
+    }
+    else if (argv[1] == "b")
     {
         return;
     }
