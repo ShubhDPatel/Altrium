@@ -7,6 +7,7 @@ add_library(altrium_library
     websites/Youtube.cpp
     websites/Pdf.cpp
     websites/Bing.cpp
+    websites/StackExchange.cpp
     )
 
 # Includes the header in the library.
