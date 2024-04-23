@@ -11,6 +11,7 @@
 #include "websites/Pdf.hpp"
 #include "websites/Bing.hpp"
 #include "websites/StackExchange.hpp"
+#include "websites/Wikipedia.hpp"
 #include <cstddef>
 #include <iostream>
 
@@ -74,6 +75,11 @@ void Altrium::parse()
         Pdf pdf(argv[2]);
         pdf.buildQuery();
     }
+    else if (argv[1] == "w")
+    {
+        Wikipedia wikipedia(argv[2]);
+        wikipedia.buildQuery();
+    }
 }
 
 /*
@@ -128,6 +134,10 @@ void Altrium::validate()
         return;
     }
     else if (argv[1] == "p")
+    {
+        return;
+    }
+    else if (argv[1] == "w")
     {
         return;
     }
