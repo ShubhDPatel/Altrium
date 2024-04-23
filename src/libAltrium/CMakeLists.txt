@@ -10,6 +10,7 @@ add_library(altrium_library
     websites/StackExchange.cpp
     websites/Wikipedia.cpp
     websites/DuckDuckGo.cpp
+    websites/GitHub.cpp
 )
 
 # Includes the header in the library.
