@@ -10,6 +10,7 @@
 #include "websites/Youtube.hpp"
 #include "websites/Pdf.hpp"
 #include "websites/Bing.hpp"
+#include "websites/StackExchange.hpp"
 #include <cstddef>
 #include <iostream>
 
@@ -57,6 +58,11 @@ void Altrium::parse()
     {
         StackOverflow stackOverflow(argv[2]);
         stackOverflow.buildQuery();
+    }
+    else if (argv[1] == "se")
+    {
+        StackExchange stackExchange(argv[2]);
+        stackExchange.buildQuery();
     }
     else if (argv[1] == "y")
     {
@@ -110,6 +116,10 @@ void Altrium::validate()
         return;
     }
     else if (argv[1] == "s")
+    {
+        return;
+    }
+    else if (argv[1] == "se")
     {
         return;
     }
