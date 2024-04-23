@@ -12,6 +12,7 @@
 #include "websites/Bing.hpp"
 #include "websites/StackExchange.hpp"
 #include "websites/Wikipedia.hpp"
+#include "websites/DuckDuckGo.hpp"
 #include <cstddef>
 #include <iostream>
 
@@ -54,6 +55,11 @@ void Altrium::parse()
     {
         Bing bing(argv[2]);
         bing.buildQuery();
+    }
+    else if (argv[1] == "d")
+    {
+        DuckDuckGo duckDuckGo(argv[2]);
+        duckDuckGo.buildQuery();
     }
     else if (argv[1] == "s")
     {
@@ -118,6 +124,10 @@ void Altrium::validate()
         return;
     }
     else if (argv[1] == "b")
+    {
+        return;
+    }
+    else if (argv[1] == "d")
     {
         return;
     }
