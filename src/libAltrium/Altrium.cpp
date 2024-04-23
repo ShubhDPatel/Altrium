@@ -13,6 +13,7 @@
 #include "websites/StackExchange.hpp"
 #include "websites/Wikipedia.hpp"
 #include "websites/DuckDuckGo.hpp"
+#include "websites/Github.hpp"
 #include <cstddef>
 #include <iostream>
 
@@ -86,6 +87,11 @@ void Altrium::parse()
         Wikipedia wikipedia(argv[2]);
         wikipedia.buildQuery();
     }
+    else if (argv[1] == "gh")
+    {
+        Github github(argv[2]);
+        github.buildQuery();
+    }
 }
 
 /*
@@ -148,6 +154,10 @@ void Altrium::validate()
         return;
     }
     else if (argv[1] == "w")
+    {
+        return;
+    }
+    else if (argv[1] == "gh")
     {
         return;
     }
