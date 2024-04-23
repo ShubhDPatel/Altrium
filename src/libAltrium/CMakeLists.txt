@@ -9,7 +9,8 @@ add_library(altrium_library
     websites/Bing.cpp
     websites/StackExchange.cpp
     websites/Wikipedia.cpp
-    )
+    websites/DuckDuckGo.cpp
+)
 
 # Includes the header in the library.
 target_include_directories(altrium_library PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
