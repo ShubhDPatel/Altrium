@@ -1,3 +1,3 @@
 #!/bin/bash
 
-./alt g "srcml"
+./alt gh "srcml"
