@@ -4,12 +4,12 @@ on: workflow_dispatch
 
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
 
       - name: Checkout Repository
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Create Build Directory
         shell: bash
