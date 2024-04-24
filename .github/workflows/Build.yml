@@ -1,0 +1,42 @@
+name: Build
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout Repository
+      - uses: actions/checkout@v4
+
+      - name: Create Build Directory
+        shell: bash
+        run: |
+          mkdir build
+
+      - name: Setup CMake
+        working-directory: build
+        shell: bash
+        run: |
+          cmake ..
+
+      - name: Build
+        working-directory: build
+        shell: bash
+        run: |
+          make
+
+      - name: Generate Debian Package
+        working-directory: build
+        shell: bash
+        run: |
+          cpack -G DEB
+
+      - name: Upload Package
+        uses: actions/upload-artifact@v4
+        with:
+          name: Altrium-deb-package
+          path: build/altrium-*.deb
+
