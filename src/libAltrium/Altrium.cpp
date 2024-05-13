@@ -14,6 +14,7 @@
 #include "websites/Wikipedia.hpp"
 #include "websites/DuckDuckGo.hpp"
 #include "websites/Github.hpp"
+#include "websites/Reddit.hpp"
 #include <cstddef>
 #include <iostream>
 
@@ -92,6 +93,11 @@ void Altrium::parse()
         Github github(argv[2]);
         github.buildQuery();
     }
+    else if (argv[1] == "r")
+    {
+        Reddit reddit(argv[2]);
+        reddit.buildQuery();
+    }
 }
 
 /*
@@ -158,6 +164,10 @@ void Altrium::validate()
         return;
     }
     else if (argv[1] == "gh")
+    {
+        return;
+    }
+    else if (argv[1] == "r")
     {
         return;
     }
